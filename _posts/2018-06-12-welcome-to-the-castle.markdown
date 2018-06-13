@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "First-Post!"
+title:  "Welcome to The Castle!"
 date:   2018-06-12 11:05:38 -0700
 category: [jekyll, update]
 ---
