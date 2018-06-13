@@ -62,3 +62,8 @@ collections:
   - sections
 plugins:
   - jekyll-remote-theme
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
