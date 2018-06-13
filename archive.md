@@ -1,6 +1,6 @@
 ---
 title: Archive
 layout: home
-icon: fa-book
+icon: fa-archive
 order: 2
 ---
