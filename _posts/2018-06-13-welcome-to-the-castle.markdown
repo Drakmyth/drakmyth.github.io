@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to The Castle!"
-date:   2018-06-13 16:20:00 -0800
+date:   2018-06-13 16:20:00
 category: [blogging]
 ---
 Hello! Welcome! Make yourself at home!

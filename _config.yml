@@ -38,6 +38,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 author: Shaun Hamman
 email: shaun.hamman@gmail.com
 avatar: assets/images/avatar.jpg
+timezone: America/Los_Angeles
 
 # You'll want to customize url and baseurl for your own site:
 baseurl: "" # the subpath of your site, e.g. /blog
