@@ -31,3 +31,9 @@ a {
 table.rouge-table {
     margin-bottom: 0;
 }
+
+input[type="button"]:disabled, input[type="submit"]:disabled, input[type="reset"]:disabled, button:disabled, .button:disabled {
+    background-color: #cecece;
+    transition: background-color 0;
+    cursor: inherit;
+}

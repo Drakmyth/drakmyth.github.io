@@ -1,6 +1,11 @@
 .comment-form {
     button {
         margin-bottom: 2em;
+        visibility: visible;
+
+        &.hidden {
+            visibility: collapse;
+        }
     }
 
     .slider {
