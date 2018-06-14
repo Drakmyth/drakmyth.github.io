@@ -3,6 +3,7 @@
 
 @import "{{ site.theme }}";
 @import "highlight";
+@import "comments";
 
 #logo {
     .image {
@@ -15,9 +16,11 @@
     }
 }
 
-article :not(header) {
-    >h1, >h2, >h3, >h4, >h5, >h6 {
-        font-weight: 900;
+article {
+    :not(header) {
+        >h1, >h2, >h3, >h4, >h5, >h6 {
+            font-weight: 900;
+        }
     }
 }
 

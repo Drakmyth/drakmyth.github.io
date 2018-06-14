@@ -25,7 +25,7 @@ layout: default
             {% assign comments = site.data.comments | sort %}
 	        {% for comment in comments reversed %}
 		        {% assign commentData = comment[1] %}
-                {% include comment.html name=commentData.name email=commentData.email message=commentData.message  %}
+                {% include comment.html comment=commentData  %}
             {% endfor %}
         </section>
     </article>
