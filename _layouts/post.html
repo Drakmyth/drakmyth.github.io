@@ -20,5 +20,13 @@ layout: default
                 {% endfor %}
             </span>
         </footer>
+        <section class="container">
+            {% include comment-form.html %}
+            {% assign comments = site.data.comments | sort %}
+	        {% for comment in comments reversed %}
+		        {% assign commentData = comment[1] %}
+                {% include comment.html name=commentData.name email=commentData.email message=commentData.message  %}
+            {% endfor %}
+        </section>
     </article>
 </div>
