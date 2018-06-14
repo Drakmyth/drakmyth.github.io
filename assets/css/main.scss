@@ -14,3 +14,17 @@
         letter-spacing: 0;
     }
 }
+
+article :not(header) {
+    >h1, >h2, >h3, >h4, >h5, >h6 {
+        font-weight: 900;
+    }
+}
+
+a {
+    color: #768ae2;
+}
+
+table.rouge-table {
+    margin-bottom: 0;
+}

@@ -69,6 +69,12 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false # DO NOT ENABLE, it breaks all the things
+    block:
+      line_numbers: true
+      start_line: 1
 highlighter: rouge
 
 # Posts and pages use the same link format. Pages will automatically exclude
