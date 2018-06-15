@@ -6,7 +6,7 @@ comments:
       type: date
       options:
         format: "iso8601"
-  branch: "post-comments"
+  branch: "feature/post-comments"
   commitMessage: "New comment"
   filename: "entry{@timestamp}"
   format: "yml"
