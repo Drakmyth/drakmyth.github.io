@@ -1,0 +1,33 @@
+comments:
+  allowedFields: ["name", "email", "message"]
+  requiredFields: ["name", "email", "message"]
+  generatedFields:
+    date:
+      type: date
+      options:
+        format: "iso8601"
+  branch: "master"
+  commitMessage: "New comment"
+  filename: "entry{@timestamp}"
+  format: "yml"
+  moderation: true
+  name: "The Castle"
+  path: "_data/comments/{options.slug}"
+  pullRequestBody: "New comment awaiting approval."
+  transforms:
+    email: md5
+  githubAuth:
+    required: false
+  notifications:
+    enabled: false
+  akismet:
+    enabled: true
+    author: "name"
+    authorEmail: "email"
+    authorUrl: ""
+    content: "message"
+    type: "comment"
+  reCaptcha:
+    enabled: true
+    siteKey: 6LeE614UAAAAAFR5xZxYcwrg86bQDiocDJBuEjpg
+    secret: w3M51RATWbgH0K2r7WejE29fZqweI/BBpSZwQhhNGd2ZEPlWPlRPk7lDcYseN3Iu29frgb2zEr5+bsQx73+KyNKSPZIGZkBjtlYx+CRYCTfwNLD6X35P2GzSCZ2D/unWzq+EtddrrRuaOPiwgRnhvMCu1npXEgAmRZZ5fUHneDM=

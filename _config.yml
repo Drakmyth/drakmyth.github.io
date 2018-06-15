@@ -80,19 +80,3 @@ highlighter: rouge
 # Posts and pages use the same link format. Pages will automatically exclude
 # segments that are applicable only to posts.
 permalink: /:year/:month/:day/:title
-
-comments:
-  allowedFields: ["name", "email", "message"]
-  branch: "master"
-  commitMessage: "New comment"
-  filename: "entry{@timestamp}"
-  format: "yml"
-  moderation: true
-  path: "_data/comments"
-  requiredFields: ["name", "email", "message"]
-  transforms:
-    email: md5
-  reCaptcha:
-    enabled: true
-    siteKey: 6LeE614UAAAAAFR5xZxYcwrg86bQDiocDJBuEjpg
-    secret: w3M51RATWbgH0K2r7WejE29fZqweI/BBpSZwQhhNGd2ZEPlWPlRPk7lDcYseN3Iu29frgb2zEr5+bsQx73+KyNKSPZIGZkBjtlYx+CRYCTfwNLD6X35P2GzSCZ2D/unWzq+EtddrrRuaOPiwgRnhvMCu1npXEgAmRZZ5fUHneDM=
