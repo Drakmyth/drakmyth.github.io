@@ -6,13 +6,13 @@ comments:
       type: date
       options:
         format: "iso8601"
-  branch: "master"
+  branch: "post-comments"
   commitMessage: "New comment"
   filename: "entry{@timestamp}"
   format: "yml"
   moderation: true
   name: "The Castle"
-  path: "_data/comments/{options.slug}"
+  path: "_data/comments/{@date:}{options.slug}"
   pullRequestBody: "New comment awaiting approval."
   transforms:
     email: md5

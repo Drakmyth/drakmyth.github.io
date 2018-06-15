@@ -22,8 +22,10 @@ layout: default
         </footer>
         <section class="container">
             {% include comment-form.html %}
-            {% assign comments = site.data.comments | sort %}
-	        {% for comment in comments reversed %}
+            {%- capture pagefile -%}
+            {{ page.date | date:"%Y-%m-%d" | append: "-" | append: page.slug }}
+            {%- endcapture -%}
+            {% for comment in site.data.comments[pagefile] %}
 		        {% assign commentData = comment[1] %}
                 {% include comment.html comment=commentData  %}
             {% endfor %}
