@@ -21,7 +21,7 @@ comments:
   notifications:
     enabled: false
   akismet:
-    enabled: true
+    enabled: false
     author: "name"
     authorEmail: "email"
     authorUrl: ""
