@@ -23,7 +23,7 @@ layout: default
         <section class="container">
             <a name="comments"></a>
             {% include comment-form.html %}
-            <div class="comment-thanks hidden">Thanks for your comment.</div>
+            <div class="comment-thanks hidden">Thank you! Your comment has been submitted for review. Once approved, it will appear below.</div>
             {%- capture pagefile -%}
             {{ page.date | date:"%Y-%m-%d" | append: "-" | append: page.slug }}
             {%- endcapture -%}
