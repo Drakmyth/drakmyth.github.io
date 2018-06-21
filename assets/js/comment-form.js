@@ -18,7 +18,7 @@ function OnSubmitComment(event) {
     var commentThanks = $('.comment-thanks');
     
     // TODO: Start Spinner
-    $(this).disabled = true;
+    $(this).find(':input').prop('disabled', true);
     $('.spinner').removeClass('hidden');
 
     $.ajax({
