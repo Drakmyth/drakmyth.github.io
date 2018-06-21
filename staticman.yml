@@ -13,7 +13,7 @@ comments:
   moderation: true
   name: "The Castle"
   path: "_data/comments/{options.postfile}"
-  pullRequestBody: "New comment awaiting approval."
+  pullRequestBody: "New comment awaiting approval.\n\n"
   transforms:
     email: md5
   githubAuth:

@@ -1,11 +1,6 @@
 .comment-form {
     button {
         margin-bottom: 2em;
-        visibility: visible;
-
-        &.hidden {
-            visibility: collapse;
-        }
     }
 
     .slider {
@@ -20,6 +15,17 @@
             max-height: 1080px;
         }
     }
+}
+
+.hidden {
+    display: none;
+}
+
+.comment-thanks {
+    background: #fafae1;
+    padding: 10px;
+    border: #aaa 1px solid;
+    margin-bottom: 1em;
 }
 
 .comment {
