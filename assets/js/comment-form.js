@@ -10,5 +10,5 @@ function OnCommentSubmit(form) {
 }
 
 function CaptchaCallback(responseToken) {
-    $('#submitButton').disabled = false;
+    $('#submitButton')[0].disabled = false;
 }
