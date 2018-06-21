@@ -20,5 +20,15 @@ layout: default
                 {% endfor %}
             </span>
         </footer>
+        <section class="container">
+            {% include comment-form.html %}
+            {%- capture pagefile -%}
+            {{ page.date | date:"%Y-%m-%d" | append: "-" | append: page.slug }}
+            {%- endcapture -%}
+            {% for comment in site.data.comments[pagefile] %}
+		        {% assign commentData = comment[1] %}
+                {% include comment.html comment=commentData  %}
+            {% endfor %}
+        </section>
     </article>
 </div>
