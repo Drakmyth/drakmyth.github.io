@@ -9,6 +9,7 @@ function CaptchaCallback(responseToken) {
 }
 
 function OnSubmitComment(event) {
+    $('#submitButton')[0].disabled = true;
     event.preventDefault(); //prevent default action 
     var post_url = $(this).attr("action"); //get form action url
     var request_method = $(this).attr("method"); //get form GET/POST method
@@ -17,6 +18,8 @@ function OnSubmitComment(event) {
     var commentThanks = $('.comment-thanks');
     
     // TODO: Start Spinner
+    $(this).disabled = true;
+    $('.spinner').removeClass('hidden');
 
     $.ajax({
         url : post_url,
@@ -31,6 +34,7 @@ function OnSubmitComment(event) {
         }
     }).done(function(response){
         // TODO: End Spinner
+        $('.spinner').addClass('hidden');
         $('.slider').removeClass('active');
         commentThanks.removeClass('hidden');
     });
