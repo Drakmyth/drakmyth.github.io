@@ -1,15 +1,16 @@
 <div class="comment-form">
     <script src="/assets/js/comment-form.js" type="text/javascript" async=""></script>
-    <button type="button" onclick="ToggleCommentForm();">Leave a comment</button>
+    <button type="button" onclick="ShowCommentForm();">Leave a comment</button>
     <div class="slider">
         <form id="leave-comment"
               method="POST"
               action="https://api.staticman.net/v2/entry/drakmyth/drakmyth.github.io/master/comments"
+              onsubmit="OnSubmitComment();"
               autocomplete="on">
             <input name="options[reCaptcha][siteKey]" type="hidden" value="6LeE614UAAAAAFR5xZxYcwrg86bQDiocDJBuEjpg">
             <input name="options[reCaptcha][secret]" type="hidden" value="w3M51RATWbgH0K2r7WejE29fZqweI/BBpSZwQhhNGd2ZEPlWPlRPk7lDcYseN3Iu29frgb2zEr5+bsQx73+KyNKSPZIGZkBjtlYx+CRYCTfwNLD6X35P2GzSCZ2D/unWzq+EtddrrRuaOPiwgRnhvMCu1npXEgAmRZZ5fUHneDM=">
             <input name="options[postfile]" type="hidden" value="{{ page.date | date:"%Y-%m-%d" }}-{{ page.slug }}">
-            <input name="options[redirect]" type="hidden" value="{{ page.url | absolute_url }}#comments">
+            <input name="options[redirect]" type="hidden" value="#comments">
             <label>Name<input name="fields[name]" type="text" autocomplete="on" required=""></label>
             <label>Email<input name="fields[email]" type="email" autocomplete="on" required=""></label>
             <label>Message<textarea name="fields[message]" autocomplete="off" required=""></textarea></label>
