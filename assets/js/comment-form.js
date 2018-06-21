@@ -24,15 +24,13 @@ function OnSubmitComment(event) {
     $.ajax({
         url : post_url,
         type: request_method,
-        data : form_data,
-        success: function(data) {
-            commentThanks.text('Thank you! Your comment has been submitted for review. Once approved, it will appear below.');
-        },
-        error: function (err) {
-            commentThanks.text('Uh oh! Something went wrong submitting your comment. Please refresh the page and try again.');
-            commentThanks.addClass('errorText');
-        }
-    }).done(function(response){
+        data : form_data
+    }).done(function(data) {
+        commentThanks.text('Thank you! Your comment has been submitted for review. Once approved, it will appear below.');
+    }).fail(function(err) {
+        commentThanks.text('Uh oh! Something went wrong submitting your comment. Please refresh the page and try again.');
+        commentThanks.addClass('errorText');
+    }).always(function(response){
         // TODO: End Spinner
         $('.spinner').addClass('hidden');
         $('.slider').removeClass('active');

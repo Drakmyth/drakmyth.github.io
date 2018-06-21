@@ -80,3 +80,9 @@
         }
     }
 }
+
+input[type="text"]:disabled, input[type="email"]:disabled, textarea:disabled {
+    background-color: #cecece;
+    transition: background-color 0;
+    cursor: inherit;
+}
