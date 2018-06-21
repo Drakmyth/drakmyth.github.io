@@ -4,14 +4,15 @@
     <div class="slider">
         <form id="leave-comment"
               method="POST"
-              action="https://api.staticman.net/v2/entry/drakmyth/drakmyth.github.io/feature%2Fpost-comments/comments"
+              action="https://api.staticman.net/v2/entry/drakmyth/drakmyth.github.io/master/comments"
               onsubmit="return OnCommentSubmit(this);"
               autocomplete="on">
             <input name="options[postfile]" type="hidden" value="{{ page.date | date:"%Y-%m-%d" }}-{{ page.slug }}">
             <label>Name<input name="fields[name]" type="text" autocomplete="on" required=""></label>
             <label>Email<input name="fields[email]" type="email" autocomplete="on" required=""></label>
             <label>Message<textarea name="fields[message]" autocomplete="off" required=""></textarea></label>
-            <button type="submit">Go!</button>
+            <div class="g-recaptcha" data-callback="CaptchaCallback" data-sitekey="6LeE614UAAAAAFR5xZxYcwrg86bQDiocDJBuEjpg"></div>
+            <button id="submitButton" type="submit" disabled="">Go!</button>
         </form>
     </div>
 </div>

@@ -8,3 +8,7 @@ function OnCommentSubmit(form) {
     ToggleCommentForm();
     form.reset();
 }
+
+function CaptchaCallback(responseToken) {
+    $('#submitButton').disabled = false;
+}
