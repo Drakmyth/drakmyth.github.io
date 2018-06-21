@@ -4,11 +4,6 @@ function ToggleCommentForm() {
     button.disabled = !button.disabled;
 }
 
-function OnCommentSubmit(form) {
-    ToggleCommentForm();
-    form.reset();
-}
-
 function CaptchaCallback(responseToken) {
     $('#submitButton')[0].disabled = false;
 }
