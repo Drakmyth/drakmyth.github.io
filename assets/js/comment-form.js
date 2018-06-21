@@ -22,14 +22,16 @@ function OnSubmitComment(event) {
         url : post_url,
         type: request_method,
         data : form_data,
+        success: function(data) {
+            commentThanks.text('Thank you! Your comment has been submitted for review. Once approved, it will appear below.');
+        },
         error: function (err) {
             commentThanks.text('Uh oh! Something went wrong submitting your comment. Please refresh the page and try again.');
             commentThanks.addClass('errorText');
         }
     }).done(function(response){
         // TODO: End Spinner
+        $('.slider').removeClass('active');
+        commentThanks.removeClass('hidden');
     });
-
-    $('.slider').removeClass('active');
-    commentThanks.removeClass('hidden');
 }
