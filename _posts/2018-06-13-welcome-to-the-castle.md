@@ -19,3 +19,4 @@ Hope you all are having a wonderful day!
 ~ S
 
 [stack-overflow]: https://stackoverflow.com/
+{:target="_blank"}

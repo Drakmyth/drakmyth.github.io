@@ -37,11 +37,26 @@ So I hope that helps clear all that up. Python, like most scripting languages, i
 
 ~ S
 
-[python]: https://www.python.org/
-[centos]: https://www.centos.org/
-[stack-overflow]: https://stackoverflow.com/
-[python-naming-recommendation]: https://www.python.org/dev/peps/pep-0394/
+[python]: https://www.python.org
+{:target="_blank"}
+
+[centos]: https://www.centos.org
+{:target="_blank"}
+
+[stack-overflow]: https://stackoverflow.com
+{:target="_blank"}
+
+[python-naming-recommendation]: https://www.python.org/dev/peps/pep-0394
+{:target="_blank"}
+
 [pyzip]: https://github.com/ipazc/pyzip
-[virtualenv]: https://virtualenv.pypa.io/en/stable/
+{:target="_blank"}
+
+[virtualenv]: https://virtualenv.pypa.io/en/stable
+{:target="_blank"}
+
 [pyenv]: https://github.com/pyenv/pyenv
+{:target="_blank"}
+
 [pyenv-installer]: https://github.com/pyenv/pyenv-installer
+{:target="_blank"}
