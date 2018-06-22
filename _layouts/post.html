@@ -28,15 +28,19 @@ layout: default
             {%- capture pagefile -%}
             {{ page.date | date:"%Y-%m-%d" | append: "-" | append: page.slug }}
             {%- endcapture -%}
-            {% assign comments = '' | split: '' %}
+            {% assign comments = site.emptyArray %}
             {% assign commentFiles = site.data.comments[pagefile] %}
-            {% for file in commentFiles %}
-                {% assign comments = comments | push:file.last %}
-            {% endfor %}
-            {% assign comments = comments | sort:'date' | reverse %}
-            {% for commentData in comments %}
-                {% include comment.html comment=commentData %}
-            {% endfor %}
+            {% if commentFiles %}
+                {% for file in commentFiles %}
+                    {% assign comments = comments | push:file.last %}
+                {% endfor %}
+                {% assign comments = comments | sort:'date' | reverse %}
+                {% for commentData in comments %}
+                    {% include comment.html comment=commentData %}
+                {% endfor %}
+            {% else %}
+                <span>There are currently no comments on this post.</span>
+            {% endif %}
         </section>
     </article>
 </div>
