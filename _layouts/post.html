@@ -15,7 +15,8 @@ layout: default
             {{- content -}}
         </div>
         <footer class="container">
-            <span>Categories {% for category in page.categories %}
+            <span>Categories
+                {% for category in page.categories %}
                 <a href="{% link archive.md %}#{{ category }}">{{ category }}</a>
                 {% endfor %}
             </span>
@@ -27,9 +28,14 @@ layout: default
             {%- capture pagefile -%}
             {{ page.date | date:"%Y-%m-%d" | append: "-" | append: page.slug }}
             {%- endcapture -%}
-            {% for comment in site.data.comments[pagefile] %}
-            {% assign commentData = comment[1] %}
-            {% include comment.html comment=commentData  %}
+            {% assign comments = '' | split: '' %}
+            {% assign commentFiles = site.data.comments[pagefile] %}
+            {% for file in commentFiles %}
+                {% assign comments = comments | push:file.last %}
+            {% endfor %}
+            {% assign comments = comments | sort:'date' | reverse %}
+            {% for commentData in comments %}
+                {% include comment.html comment=commentData %}
             {% endfor %}
         </section>
     </article>
