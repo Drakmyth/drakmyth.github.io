@@ -80,3 +80,5 @@ highlighter: rouge
 # Posts and pages use the same link format. Pages will automatically exclude
 # segments that are applicable only to posts.
 permalink: /:year/:month/:day/:title
+
+emptyArray: []
