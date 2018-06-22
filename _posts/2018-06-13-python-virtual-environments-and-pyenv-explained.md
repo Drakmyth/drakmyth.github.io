@@ -2,7 +2,7 @@
 layout: post
 title:  "Python, Virtual Environments, and pyenv: Explained"
 date:   2018-06-13 22:26:00
-categories: [python, linux]
+categories: [python]
 ---
 On a recent client project I was required to set up a [Python][python] development environment on a [CentOS 7][centos] virtual machine. I haven't had to work with Python since version 2.3, so I was basically starting from scratch as far as prior knowledge went. I'm generally pretty good at figuring things out and following instructions, but my gosh what a mess!
 
