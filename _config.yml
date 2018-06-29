@@ -44,15 +44,16 @@ timezone: America/Los_Angeles
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://drakmyth.github.io" # the base hostname & protocol for your site
 
-# Social settings
+# Social settings, e.g. https://github.com/chrisbobbe
+twitter_url: "https://twitter.com/Drakmyth"
 facebook_url:
-github_url: "https://github.com/Drakmyth"
 googleplus_url:
 instagram_url:
 linkedin_url: "https://www.linkedin.com/in/shamman"
+github_url: "https://github.com/Drakmyth"
 pinterest_url:
 slack_url:
-twitter_url: "https://twitter.com/Drakmyth"
+dribbble_url:
 
 # Google Analytics Tracking ID goes here:
 google_analytics:
