@@ -58,7 +58,7 @@ twitter_url: "https://twitter.com/Drakmyth"
 google_analytics:
 
 # The following settings are NECESSARY for the Prologue theme to run:
-remote_theme: chrisbobbe/jekyll-theme-prologue
+remote_theme: Drakmyth/jekyll-theme-prologue
 collections:
   - sections
 plugins:
