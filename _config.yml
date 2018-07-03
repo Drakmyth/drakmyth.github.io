@@ -65,6 +65,7 @@ collections:
   - sections
 plugins:
   - jekyll-remote-theme
+  - jekyll-sitemap
 
 # Configure syntax highlighting
 markdown: kramdown
