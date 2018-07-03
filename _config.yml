@@ -75,7 +75,7 @@ kramdown:
     span:
       line_numbers: false # DO NOT ENABLE, it breaks all the things
     block:
-      line_numbers: true
+      line_numbers: false
       start_line: 1
 highlighter: rouge
 
