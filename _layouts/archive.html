@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+{%- include header.html scrolly_nav=site.data.archive-categories.sections -%}
+<!-- Main -->
+<div id="main">
+    {%- assign sortedCategories = site.categories | sort: category[0] -%}
+    {%- for category in sortedCategories -%}
+        {%- assign categoryTitle = category[0] | capitalize -%}
+        {%- assign categoryPosts = category[1] -%}
+        {%- include archive-section.html title=categoryTitle posts=categoryPosts-%}
+    {%- endfor -%}
+</div>

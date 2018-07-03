@@ -1,0 +1,13 @@
+sections:
+  - title: Blogging
+    icon: fa-tag
+    icon-style: solid
+  - title: Jekyll
+    icon: fa-tag
+    icon-style: solid
+  - title: Python
+    icon: fa-tag
+    icon-style: solid
+  - title: Staticman
+    icon: fa-tag
+    icon-style: solid

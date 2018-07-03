@@ -1,6 +1,6 @@
 ---
 title: Archive
-layout: home
+layout: archive
 icon: fa-archive
 order: 2
 ---
