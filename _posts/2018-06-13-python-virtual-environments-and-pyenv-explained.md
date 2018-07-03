@@ -10,7 +10,7 @@ Between the system insisting that there are no newer versions of Python past 2.7
 
 I ended up spending three days trying to get the system to work without it complaining pip wasn't installed or that I didn't have permission to do something. Many blog posts, [Stack Overflow][stack-overflow] questions, and re-created virtual machines later I finally got it working and (I think) I understand how everything fits together. My stance on it now? The way Python handles environments is pretty clever and powerful once you get it set up, but getting it to that point is a nightmare!
 
-For those of you who are as lost as I was, let me explain all the pieces to you in simple, understandable terms. Then I'll make a second post that shows you step by step how to get this all up and running slick as a whistle.
+For those of you who are as lost as I was, let me explain all the pieces to you in simple, understandable terms. Then I'll make [a second post][part2] that shows you step by step how to get this all up and running slick as a whistle.
 
 # Python
 
@@ -31,7 +31,7 @@ Obviously, these are both bad outcomes. In order to handle this, Python came up 
 
 Enter [pyenv][pyenv]. `pyenv` is a `virtualenv` wrapper. When installed properly, `pyenv` adds a shim which basically takes over your system's `python` and `pip` commands. `pyenv` then allows you to manage your virtual environments as well as all your Python versions all from a single executable. You can install new versions of Python, create new virtual environments for different projects, and never need to worry about what `#` to stick on the end of your `python` call or where Python is installed to ever again. You always call `python` or `pip`, then `pyenv` will automatically route your request to the correct version, installation, and set of dependencies for what you are doing.
 
-Note the words "when installed properly". Apparently, `pyenv` is particularly difficult to install by hand. Thus a sister project, [pyenv-installer][pyenv-installer] was born. It seems, though, that the installation instructions provided on the `pyenv-installer` don't actually work. I will walk you through the correct way of installing it in the next post.
+Note the words "when installed properly". Apparently, `pyenv` is particularly difficult to install by hand. Thus a sister project, [pyenv-installer][pyenv-installer] was born. It seems, though, that the installation instructions provided on the `pyenv-installer` don't actually work. I will walk you through the correct way of installing it in [the next post][part2].
 
 So I hope that helps clear all that up. Python, like most scripting languages, is a hot mess of libraries with obtuse names and wrappers upon wrappers upon wrappers, and most documentation assumes you have intimate knowledge of not just Python, but half the libraries involved. It can be very difficult to find your footing and much of the community documentation that is out there is long out of date. The information is there if you're willing to dig, and my goal is to do some of that excavation so you don't have to.
 
@@ -60,3 +60,5 @@ So I hope that helps clear all that up. Python, like most scripting languages, i
 
 [pyenv-installer]: https://github.com/pyenv/pyenv-installer
 {:target="_blank"}
+
+[part2]: {{ site.baseurl }}{% post_url 2018-07-03-python-and-pyenv-in-practice %}
