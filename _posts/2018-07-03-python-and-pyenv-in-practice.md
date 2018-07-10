@@ -11,6 +11,8 @@ A few details before we start:
 * As to which particular flavor of Linux, we'll be using CentOS 7. By and large this shouldn't really matter, except that you'll need to use your distribution's package manager of choice. For us, it's `yum` but you may use `apt`, `zypper`, `pacman`, `emerge`, `dnf`, or something else entirely. The process should be roughly the same, but some of the package names may differ.
 * The pyenv setup and configuration utilizes bash scripts, so we will be using the bash shell for this guide. I'm not familiar with other shells, so I can't say how much work it would be to modify those scripts to run in other shells.
 
+**Update 2018-07-10:** *My understanding of pyenv was slightly mistaken. pyenv itself is a bash extension, thus it cannot be run on Windows or in a shell other than bash. The majority of the functionality pyenv provides is implemented into python itself as of version 3.3, so the virtual environment handling is available cross-platform/shell, but the ability to work across Python versions (including versions prior to 3.3) and to automatically enable and disable environments on a per directory basis is pyenv exclusive as far as I know.*
+
 With all that settled, let's open up a terminal and get started!
 
 CentOS, like most Linux distributions, comes with Python pre-installed. However, it has become best practice to basically never use this installation. It's being used by the operating system, and updating or installing modules could potentially interfere with its operation. So we're going to take some minimally invasive steps to separate ourselves from it.
