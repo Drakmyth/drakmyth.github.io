@@ -21,7 +21,7 @@ CentOS, like most Linux distributions, comes with Python pre-installed. However,
 $ sudo yum -y install gcc zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel xz xz-devel tk-devel libffi-devel python-pip
 ```
 
-**Update 2018-07-21:** *Added a few potentially missing dependencies. See https://github.com/pyenv/pyenv/wiki for the list of dependencies you should install for your particular linux distribution.*
+**Update 2018-07-21:** *Added a few potentially missing dependencies. See [https://github.com/pyenv/pyenv/wiki][pyenv-wiki] for the list of dependencies you should install for your particular linux distribution.*
 
 This will install a number of libraries that Python and/or pyenv need in order to run properly. Of particular note here is `python-pip`. Pip is the Python-specific package manager. It's actually invoked by calling Python and passing a particular parameter string, but many tutorials will invoke it directly. This package provides a simple alias to allow you to do that. If you want to skip this step and invoke Pip using the Python executable, you can do so with the command:
 
@@ -98,3 +98,6 @@ And there you have it! You're all set up and ready to write some Python! It's ac
 ~ S
 
 [part1]: {{ site.baseurl }}{% post_url 2018-06-13-python-virtual-environments-and-pyenv-explained %}
+
+[pyenv-wiki]: https://github.com/pyenv/pyenv/wiki
+{:target="_blank"}
