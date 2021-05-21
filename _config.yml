@@ -66,6 +66,7 @@ collections:
 plugins:
   - jekyll-remote-theme
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 # Configure syntax highlighting
 markdown: kramdown

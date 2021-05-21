@@ -3,6 +3,7 @@ layout: post
 title:  "Python and pyenv: In Practice"
 date:   2018-07-03 10:55:00
 categories: [python]
+redirect_to: https://drakmyth.com/blog/2018/07/03/python-and-pyenv-in-practice/
 ---
 If you're looking for an explanation of what all the moving parts are, make sure to read [the previous post on this topic][part1]. If you're ready to fire up your terminal and get your Python environment set up once and for all, read on!
 

@@ -3,6 +3,7 @@ layout: post
 title:  "Comments Are Now Available"
 date:   2018-06-22 12:03:00
 categories: [blogging, jekyll, staticman]
+redirect_to: https://drakmyth.com/blog/2018/06/22/comments-are-now-available/
 ---
 One of the goals I had with this blog was to keep the infrastructure simple. When I've tried to use full Content Management Systems like WordPress or Drupal in the past, I felt like I spent more time and effort customizing the site, updating plugins, and keeping it working the way I want that it just felt like work, which led to me not really spending much time on the real content: the posts.
 

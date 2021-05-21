@@ -3,6 +3,7 @@ layout: post
 title:  "Welcome to The Castle!"
 date:   2018-06-13 16:20:00
 categories: [blogging]
+redirect_to: https://drakmyth.com/blog/2018/06/13/welcome-to-the-castle/
 ---
 Hello! Welcome! Make yourself at home!
 
